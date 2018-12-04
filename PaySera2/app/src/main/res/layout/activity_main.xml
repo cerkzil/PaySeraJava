@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/savings_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:padding="8dp"
+        android:text="@string/savings"
+        android:textColor="@color/text"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/savings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/savings_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/USD"
+            style="@style/NumberStyle"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            tools:text="1000 USD" />
+
+        <TextView
+            android:id="@+id/EUR"
+            style="@style/NumberStyle"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            tools:text="0 EUR" />
+
+
+        <TextView
+            android:id="@+id/JPY"
+            style="@style/NumberStyle"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            tools:text="0 JPY" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/commissions_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/savings"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:padding="8dp"
+        android:text="@string/commission"
+        android:textColor="@color/text"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/commissions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commissions_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/comUSD"
+            style="@style/NumberStyle"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            tools:text="1000 USD" />
+
+        <TextView
+            android:id="@+id/comEUR"
+            style="@style/NumberStyle"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            tools:text="0 EUR" />
+
+
+        <TextView
+            android:id="@+id/comJPY"
+            style="@style/NumberStyle"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            tools:text="0 JPY" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/conversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/commissions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:padding="8dp">
+
+        <Spinner
+            android:id="@+id/from_currency_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/amount"
+            android:inputType="numberDecimal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" />
+
+        <Spinner
+            android:id="@+id/to_currency_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="@string/convert" />
+
+
+</RelativeLayout>

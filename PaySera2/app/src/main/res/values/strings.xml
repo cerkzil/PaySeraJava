@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PaySera</string>
+    <string name="not_sufficient_funds">Pervedimas nepasisekė, nepakankamai lėšų</string>
+    <string name="amount">Suma</string>
+    <string name="convert">Konvertuoti</string>
+    <string name="commission">Komisinio mokesčio išlaidos</string>
+    <string name="savings">Santaupos</string>
+</resources>
